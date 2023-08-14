@@ -1,0 +1,94 @@
+:root{
+    --bs-gold: #7a8306;
+    --bs-body-font-family: Merriweather, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --bs-body-color: #212529;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+}
+
+.navbar-brand{
+    display: flex;
+    margin-left: 5%;
+}
+
+.navbar-logo{
+    width: 15%;
+}
+.navbar-nav {
+	
+	margin-left: auto;
+	margin-right: 50px;
+	list-style: none;
+	
+	display: flex;
+	align-items: center;
+	
+	transition: 0.4s ease all, 0s ease background;
+	
+	li {
+		text-transform: uppercase;
+		padding: 0 15px;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		transition: 0.4s ease all, 0s ease margin;
+		
+		a {
+			text-decoration: none;
+			color: #fff;
+		}
+		
+		&:hover {
+			background: #7a8306;
+			cursor: pointer;
+			
+			a {
+				color: #080808;
+			}
+			
+		}
+		
+		
+	}
+	
+}
+
+.navbar-nav .dropdown-menu {
+  position: static;
+}

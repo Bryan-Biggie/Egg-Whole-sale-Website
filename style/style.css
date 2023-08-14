@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0.808)), url(../images/eggback6.jpg);
+    background-position: center;
+    background-size: cover;
+    /*padding-left: 8%;
+    padding-right: 8%;*/
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+    padding-left: 8%;
+}
+.menu-icon{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+    padding-right: 8%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.row{
+    box-sizing: border-box;
+    padding-left: 8%;
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+h3{
+    color: #fff;
+    font-size: 50px;
+}
+p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.farmer{
+    width: 538px;
+    margin-left: 30px;
+}
+
+
+
+
